@@ -43,14 +43,28 @@ $('.news-sales-slider').slick({
 	appendArrows: '.news-sales-slider__nav',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	
+});
+
+$('.gallery-slider').slick({
+	slidesToShow: 3,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 480,
 			settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1,
-				variableWidth: false,
+			}
+		}, {
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
 			}
 		}
 	]
+});
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
 });
