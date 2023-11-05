@@ -258,18 +258,12 @@
 	.map-photo, .map
 		height: 100%
 	.mail
-<<<<<<< HEAD
 		margin: 80px 0 30px
 
 // page-news
 .page-news
 	margin: 0
 
-=======
-		margin: 80px 0 30px	
-
-// page-news
->>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
 .news-card-column
 	max-width: none
 	flex-direction: column
@@ -285,7 +279,6 @@
 		padding: 20px 30px 30px
 	.news-card__title
 		margin: 0 0 34px
-<<<<<<< HEAD
 
 // news sales
 .news-sales-slider-item
@@ -352,6 +345,74 @@
 	.btn
 		margin: 0 auto
 		padding: 10px 42px
-=======
-					
->>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
+
+// catalog
+.catalog
+	margin: 65px 0 127px
+	.subtitle
+		margin: 20px 0 56px
+		font-size: 40px
+
+.product-card
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	width: 100%
+	height: 100%
+	padding: 15px 13px 27px
+	text-align: center
+	&__img
+		width: 100%
+		height: 368px
+		border-radius: 8px
+		background: #FFF
+		padding: 23px
+		@include d-flex
+		img
+			max-height: 100%
+	&__body
+		width: 100%
+		height: calc(100% - 368px)
+		padding: 19px 0
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__title
+		max-width: 270px
+		width: 100%
+		margin: 0 auto
+		font-size: 20px
+		font-weight: 500
+		color: #fff
+		&:hover
+			color: $accent
+	&__article
+		margin: 11px auto 15px
+		color: $accent
+	.btn
+		margin: auto auto 0
+	.tooltip-wrapper
+		margin: 0 0 0 15px
+	.price-wrapper
+		font-size: 18px
+		font-weight: 500
+		color: $accent
+
+	.price-item
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 0 10px
+		&:last-child
+			margin: 0
+		&__val
+			margin: 0 0 0 5px
+			color: #fff
+		p
+			margin: 0 auto	
+
+.available-box
+	font-size: 18px
+	margin: 16px auto 20px
+	display: flex
+	align-items: center

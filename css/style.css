@@ -212,6 +212,9 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
   background: #000;
 }
+.btn-accent:hover svg {
+  stroke: #fff;
+}
 
 .btn-border {
   color: #000;
@@ -220,6 +223,27 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-border:hover {
   background: #000;
   color: #fff;
+}
+
+.btn-loader {
+  margin: 0 auto;
+}
+.btn-loader svg {
+  width: 20px;
+  min-width: 20px;
+  height: 10px;
+  stroke: #000;
+  fill: none;
+  margin: 0 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn-group {
@@ -284,6 +308,10 @@ ul, ol {
   padding: 0 10px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mb-70 {
   margin-bottom: 70px;
 }
@@ -296,15 +324,11 @@ ul, ol {
   margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .mb-20 {
   margin-bottom: 20px;
 }
 
 h1, .h1, .slider-title {
-=======
-h1, .h1 {
->>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
   font-size: 64px;
   text-transform: uppercase;
   font-weight: 500;
@@ -590,4 +614,55 @@ a.color-accent:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.tooltip-wrapper:hover .tooltip-box {
+  display: block;
+}
+
+.btn-tooltip {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tooltip-box {
+  display: none;
+  z-index: 2;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin: 0 0 10px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #262626;
+  color: #fff;
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+  max-width: 247px;
+  min-width: 247px;
+  width: 100%;
+  font-size: 12px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: normal;
 }

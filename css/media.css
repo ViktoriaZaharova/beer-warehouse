@@ -88,6 +88,13 @@
   footer .phone {
     margin: 0 0 0 20px;
   }
+  .product-card__title {
+    font-size: 18px;
+    max-width: none;
+  }
+  .product-card .price-wrapper, .available-box {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 992px) {
   header {
@@ -197,6 +204,9 @@
   }
   .brands-section {
     margin: 40px 0 60px;
+  }
+  .catalog {
+    margin: 50px 0 70px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -325,7 +335,6 @@
   .news-card-column {
     max-width: none;
   }
-<<<<<<< HEAD
   .slider-title {
     font-size: 30px;
   }
@@ -341,9 +350,8 @@
   }
   .brand-card__logo {
     height: auto;
+    max-width: none;
   }
-=======
->>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
 }
 @media only screen and (max-width: 480px) {
   .modal-dialog .btn-group .btn {

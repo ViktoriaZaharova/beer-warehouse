@@ -148,6 +148,8 @@ button, .btn
 	&:hover
 		color: #fff
 		background: #000
+		svg
+			stroke: #fff
 
 .btn-border
 	color: #000
@@ -155,6 +157,17 @@ button, .btn
 	&:hover
 		background: #000
 		color: #fff
+
+.btn-loader
+	margin: 0 auto
+	svg
+		width: 20px
+		min-width: 20px
+		height: 10px
+		stroke: #000
+		fill: none
+		margin: 0 0 0 15px
+		@include d-flex		
 
 .btn-group
 	flex-wrap: wrap
@@ -200,6 +213,9 @@ ul, ol
 	>*
 		padding: 0 10px
 
+.mt-30
+	margin-top: 30px		
+
 .mb-70
 	margin-bottom: 70px
 
@@ -209,14 +225,10 @@ ul, ol
 .mb-30
 	margin-bottom: 30px
 
-<<<<<<< HEAD
 .mb-20
 	margin-bottom: 20px
 
 h1, .h1, .slider-title
-=======
-h1, .h1
->>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
 	font-size: 64px
 	text-transform: uppercase
 	font-weight: 500
@@ -281,7 +293,7 @@ a.color-accent
 		margin: 0 30px 0 0
 	.slick-dots
 		order: -1
-		margin: 0 auto 0 0	
+		margin: 0 auto 0 0
 
 .slick-dots
 	padding: 0
@@ -306,7 +318,6 @@ a.color-accent
 		&.slick-active
 			background: $accent
 
-	
 //checkbox my
 .label-checkbox
 	position: relative
@@ -390,15 +401,15 @@ a.color-accent
 	display: flex
 	align-items: center
 	+ .breadcrumb-item
+		padding: 0
+		&::before
+			content: '>'
+			border: none
 			padding: 0
-			&::before
-				content: '>'
-				border: none
-				padding: 0
-				margin: 0 10px
-				color: #989898
+			margin: 0 10px
+			color: #989898
 	&.active
-		color: #989898		
+		color: #989898
 
 .list-messangers
 	width: 100%
@@ -412,3 +423,38 @@ a.color-accent
 			margin: 0
 		a
 			@include d-flex
+
+.tooltip-wrapper
+	position: relative
+	display: inline-flex
+	&:hover
+		.tooltip-box
+			display: block
+
+.btn-tooltip
+	width: 22px
+	min-width: 22px
+	height: 22px
+	cursor: pointer
+	@include d-flex
+
+.tooltip-box
+	display: none
+	z-index: 2
+	bottom: 100%
+	left: 50%
+	transform: translate(-50%,0)
+	margin: 0 0 10px
+	padding: 20px
+	border-radius: 16px
+	background: #262626
+	color: #fff
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	max-width: 247px
+	min-width: 247px
+	width: 100%
+	font-size: 12px
+	position: absolute
+	text-align: left
+	transition: .3s
+	font-weight: normal
