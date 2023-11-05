@@ -345,6 +345,7 @@ h2, .h2 {
   font-weight: 500;
   text-transform: uppercase;
   color: #FFC400;
+  margin: 0;
 }
 
 .color-accent {
@@ -356,6 +357,13 @@ a.color-accent {
 }
 a.color-accent:hover {
   color: #989898;
+}
+
+.h3 {
+  font-size: 36px;
+  width: 100%;
+  font-weight: 500;
+  color: #FFC400;
 }
 
 .subtitle {
