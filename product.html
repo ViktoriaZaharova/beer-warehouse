@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пивной склад</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<div class="nav-menu__close"></div>
+						<form method="post" class="form-search">
+							<label><input type="text" placeholder="поиск"></label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+						<div class="address-box">
+							<p><strong>Самовывоз</strong></p>
+							<p>Пенза, ул. Володарского, 2</p>
+						</div>
+					</nav>
+
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+					<a href="basket.html" class="btn-basket">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#basket"></use>
+						</svg>
+						<span class="btn-basket__val">3</span>
+					</a>
+
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="page page-product page-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item"><a href="news-sales.html">Новинки и акции</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Фасованное пиво</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-5 mb-30">
+					<a href="img/product1.png" class="product-image"><img src="img/product1.png" alt=""></a>
+				</div>
+				<div class="col-12 col-lg-7 mb-30">
+					<div class="product-information">
+						<div class="product-information__head">
+							<h1>Пиво «Жигули Барное Безалкогольное»
+								0,45 ст/б 1/20</h1>
+							<div class="article">Арт. ЦБ-00002322</div>
+						</div>
+
+						<div class="product-information__body">
+							<ul class="list-characteristics my-ul">
+								<li>
+									<div class="h4">Крепость</div>
+									<span>4 %</span>
+								</li>
+								<li>
+									<div class="h4">Литраж</div>
+									<span>0.25 Л</span>
+								</li>
+								<li>
+									<div class="h4">Страна</div>
+									<span>Россия</span>
+								</li>
+							</ul>
+							<div class="price-wrapper">
+								<div class="price-item">
+									<p>Цена самовывоз:<span class="price-item__val">44,50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+								<div class="price-item">
+									<p>Цена с доставкой:<span class="price-item__val">50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="package-value">
+								<div class="h4">Количество единиц в упаковке</div>
+								<span>20</span>
+							</div>
+						</div>
+						<div class="product-information__footer">
+							<div class="remainder">
+								<div class="h4">Остаток на складе:</div>
+								<div class="remainder-value">
+									<div class="remainder-value__number">150</div>
+									<span>упаковок</span>
+								</div>
+							</div>
+
+							<div class="package-order">
+								<div class="h4">Количество упаковок:</div>
+
+								<div class="amount">
+									<span class="down"><img src="img/minus.svg" alt=""></span>
+									<input type="text" value="1" />
+									<span class="up"><img src="img/plus.svg" alt=""></span>
+								</div>
+
+								<a href="basket.html" class="btn btn-accent">добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12">
+					<ul class="nav nav-pills nav-tabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="nav-tab-1" data-bs-toggle="pill" data-bs-target="#tab-1" type="button"
+								role="tab" aria-controls="tab-1" aria-selected="true">Описание</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="nav-tab-2" data-bs-toggle="pill" data-bs-target="#tab-2" type="button"
+								role="tab" aria-controls="tab-2" aria-selected="false">Производитель</button>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1" tabindex="0">
+							<div class="text-description">
+								<p>Мы работаем в сфере оптовой торговли напитками с 2000 года и за это время зарекомендовали себя как
+									надежный поставщик.
+									Наша продукция всегда высокого качества и по приемлемым ценам. Широкий ассортимент предлагает
+									покупателям напитки на
+									любой вкус, кроме этого, каталог товаров постоянно расширяется. Мы ценим своих клиентов, поэтому
+									соотношение
+									Цена-Качество наших напитков всегда самое оптимальное. Мы работаем в сфере оптовой торговли напитками
+									с 2000 года и за
+									это время зарекомендовали себя как надежный поставщик. Наша продукция всегда высокого качества и по
+									приемлемым ценам.
+									Широкий ассортимент предлагает покупателям напитки на любой вкус, кроме этого, каталог товаров
+									постоянно расширяется. Мы
+									ценим своих клиентов, поэтому соотношение Цена-Качество наших напитков всегда самое оптимальное.</p>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2" tabindex="0">
+							<div class="text-description">
+								<p>Мы работаем в сфере оптовой торговли напитками с 2000 года и за это время зарекомендовали себя как
+									надежный
+									поставщик.
+									Наша продукция всегда высокого качества и по приемлемым ценам. Широкий ассортимент предлагает
+									покупателям напитки на
+									любой вкус, кроме этого, каталог товаров постоянно расширяется. Мы ценим своих клиентов, поэтому
+									соотношение
+									Цена-Качество наших напитков всегда самое оптимальное. Мы работаем в сфере оптовой торговли напитками
+									с 2000 года и
+									за
+									это время зарекомендовали себя как надежный поставщик. Наша продукция всегда высокого качества и по
+									приемлемым
+									ценам.
+									Широкий ассортимент предлагает покупателям напитки на любой вкус, кроме этого, каталог товаров
+									постоянно
+									расширяется. Мы
+									ценим своих клиентов, поэтому соотношение Цена-Качество наших напитков всегда самое оптимальное.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="recommended">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Рекомендуем</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="product-card">
+						<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="product.html" class="product-card__title">Пиво «Жигули Барное Безалкогольное»
+								0,45 ст/б 1/20</a>
+							<div class="product-card__article">Арт. ЦБ-00002322</div>
+							<div class="price-wrapper">
+								<div class="price-item">
+									<p>Цена самовывоз:<span class="price-item__val">44,50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+								<div class="price-item">
+									<p>Цена с доставкой:<span class="price-item__val">50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="available-box">Доступно к заказу 10 уп. <div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Если необходимого количества товара нет сейчас на складе, свяжитесь с нами по телефону 8 800 445
+											98 12</p>
+									</div>
+								</div>
+							</div>
+							<a href="product.html" class="btn btn-border-accent">подробнее</a>
+						</div>
+				
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="product-card">
+						<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="product.html" class="product-card__title">Пиво «Жигули Барное Безалкогольное»
+								0,45 ст/б 1/20</a>
+							<div class="product-card__article">Арт. ЦБ-00002322</div>
+							<div class="price-wrapper">
+								<div class="price-item">
+									<p>Цена самовывоз:<span class="price-item__val">44,50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+								<div class="price-item">
+									<p>Цена с доставкой:<span class="price-item__val">50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="available-box">Доступно к заказу 10 уп. <div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Если необходимого количества товара нет сейчас на складе, свяжитесь с нами по телефону 8 800 445
+											98 12
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="product.html" class="btn btn-border-accent">подробнее</a>
+						</div>
+				
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="product-card">
+						<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="product.html" class="product-card__title">Пиво «Жигули Барное Безалкогольное»
+								0,45 ст/б 1/20</a>
+							<div class="product-card__article">Арт. ЦБ-00002322</div>
+							<div class="price-wrapper">
+								<div class="price-item">
+									<p>Цена самовывоз:<span class="price-item__val">44,50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+								<div class="price-item">
+									<p>Цена с доставкой:<span class="price-item__val">50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="available-box">Доступно к заказу 10 уп. <div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Если необходимого количества товара нет сейчас на складе, свяжитесь с нами по телефону 8 800 445
+											98 12
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="product.html" class="btn btn-border-accent">подробнее</a>
+						</div>
+				
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="product-card">
+						<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+						<div class="product-card__body">
+							<a href="product.html" class="product-card__title">Пиво «Жигули Барное Безалкогольное»
+								0,45 ст/б 1/20</a>
+							<div class="product-card__article">Арт. ЦБ-00002322</div>
+							<div class="price-wrapper">
+								<div class="price-item">
+									<p>Цена самовывоз:<span class="price-item__val">44,50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+								<div class="price-item">
+									<p>Цена с доставкой:<span class="price-item__val">50 ₽</span></p>
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+										<div class="tooltip-box">
+											<p>Цена актуальная за единицу продукции, при покупке места и самовывоза со склада.
+												Цена действует на день покупки</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="available-box">Доступно к заказу 10 уп. <div class="tooltip-wrapper">
+									<div class="btn-tooltip"><img src="img/info-icon.svg" alt=""></div>
+									<div class="tooltip-box">
+										<p>Если необходимого количества товара нет сейчас на складе, свяжитесь с нами по телефону 8 800 445
+											98 12
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="product.html" class="btn btn-border-accent">подробнее</a>
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="ageModal" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Содержимое сайта может содержать материалы, предназначенные только для взрослых
+					</div>
+					<div class="modal-title">Вам есть 18 лет?</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="btn-group">
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Да, мне есть 18</a>
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Мне нет 18</a>
+						<div class="viewed-text">
+							<p>Но я хочу посмотреть ассортимент
+								безалкогольных напитков</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="agreementModal" tabindex="-1" aria-labelledby="agreementModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Договор формируется</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Мы свяжемся с вами по указанному телефону или электронной почты, уточнить детали заключения договора</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Данные о вашем заказе поступили в обработку
+					</div>
+					<div class="modal-title">Спасибо за заказ!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Наш менеджер свяжется с вами в ближайшее время</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
