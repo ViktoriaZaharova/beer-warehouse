@@ -521,4 +521,118 @@
 		width: 100%
 		height: 100%
 		object-fit: cover
-		border-radius: 16px				
+		border-radius: 16px
+
+// contract
+.page-contract
+	margin: 0 0 60px
+	h1
+		margin: 0 0 30px
+
+.manager-box
+	width: 100%
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	color: #fff
+	padding: 30px 20px
+	font-size: 18px
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+	&__photo
+		border-radius: 50%
+		@include d-flex
+		width: 74px
+		height: 74px
+		min-width: 74px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__name
+		width: calc(100% - 74px)
+		padding: 0 0 0 12px
+	.name
+		margin: 0 0 10px
+		color: $accent
+		font-weight: 500
+	&__body
+		width: 100%
+		margin: 17px 0 0
+
+.sample-box
+	display: flex
+	align-items: center
+	margin: 0 0 76px
+	padding: 37px 45px
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	&__title
+		color: #fff
+		font-size: 36px
+		font-weight: 500
+		margin: 0 33px
+		&:hover
+			colo: $accent
+	&__icon
+		width: 43px
+		@include d-flex
+
+.btn-agreement
+	margin: 0 auto 0
+
+.contract-item
+	margin: 0 0 50px
+	&:last-child
+		margin: 0
+	h3
+		margin: 0 0 60px
+		font-size: 36px
+
+.document-file-item
+	display: flex
+	align-items: start
+	margin: 0 0 45px
+	&:last-child
+		margin: 0
+
+	&__name
+		max-width: 305px
+		width: 100%
+		display: block
+		margin: 0 auto 0 0
+		font-size: 18px
+		padding: 0 24px 0 0
+	&.w-100
+		padding: 0 0 0 100px
+		.document-file-item__name
+			max-width: none
+
+
+.last-step
+	max-width: 1096px
+	width: 100%
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	margin: 56px auto 0
+	display: flex
+	align-items: center
+	padding: 33px 36px 33px 46px
+	h4
+		font-weight: 500
+		font-size: 24px
+		padding: 0 40px 0 0
+
+.final-callback
+	text-align: center
+	color: $accent
+	font-size: 24px
+	font-weight: 500
+	margin: 55px auto 0
+	max-width: 1058px
+	width: 100%

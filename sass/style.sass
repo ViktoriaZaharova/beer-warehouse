@@ -167,7 +167,7 @@ button, .btn
 		stroke: #000
 		fill: none
 		margin: 0 0 0 15px
-		@include d-flex		
+		@include d-flex
 
 .btn-group
 	flex-wrap: wrap
@@ -214,7 +214,7 @@ ul, ol
 		padding: 0 10px
 
 .mt-30
-	margin-top: 30px		
+	margin-top: 30px
 
 .mb-70
 	margin-bottom: 70px
@@ -257,7 +257,7 @@ a.color-accent
 	font-size: 36px
 	width: 100%
 	font-weight: 500
-	color: $accent		
+	color: $accent
 
 .subtitle
 	font-size: 32px
@@ -465,3 +465,56 @@ a.color-accent
 	text-align: left
 	transition: .3s
 	font-weight: normal
+
+.nav-tabs
+	border: none
+	width: 100%
+	border-radius: 0
+	font-size: 36px
+	.nav-item
+		margin: 0 43px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		background: transparent
+		padding: 10px 0
+		border: none
+		border-bottom: 1px solid transparent
+		border-radius: 0
+		color: #989898
+		&:hover
+			color: $accent
+		&.active
+			background: transparent
+			color: #fff
+			font-weight: 500
+			border-color: $accent
+
+.tab-content
+	width: 100%
+	margin: 46px 0 0
+
+.label-file
+	position: relative
+	z-index: 1
+	cursor: pointer
+	padding: 15px 30px
+	width: fit-content 
+	font-size: 16px
+	border-radius: 8px
+	border: 2px solid #FFC400
+	white-space: nowrap
+	input
+		display: none
+	&__text
+		display: flex
+		align-items: center
+		&::after
+			content: ''
+			display: inline-flex
+			margin: 0 0 0 15px
+			width: 17px
+			min-width: 17px
+			height: 20px
+			background: url('../img/file.svg') no-repeat center
+			background-size: 100%

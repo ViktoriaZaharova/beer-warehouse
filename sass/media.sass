@@ -86,7 +86,44 @@
 	.product-card .price-wrapper, .available-box
 		font-size: 16px
 
+	.contract-item 
+		margin: 0 0 30px
+		h3
+			margin: 0 0 20px
+			font-size: 24px
 
+	.sample-box
+		margin: 0 0 30px
+		padding: 20px
+		&__title
+			font-size: 24px
+			margin: 0 20px
+		&__icon
+			width: 30px			
+
+	.tab-content
+		margin: 30px 0 0
+
+	.nav-tabs
+		font-size: 24px
+		.nav-item
+			margin: 0 20px 0 0
+			&:last-child
+				margin: 0
+
+	.document-file-item.w-100
+		padding: 0
+
+	.last-step
+		padding: 20px
+		margin: 30px auto 0
+		h4
+			font-size: 20px
+			padding: 0 20px 0 0
+
+	.final-callback
+		font-size: 20px
+		margin: 30px auto 0							
 
 @media only screen and (max-width: 992px)
 	header
@@ -202,6 +239,13 @@
 	.page-article h1
 		font-size: 44px		
 
+	.document-file-item
+		margin: 0 0 20px
+		&:last-child
+			margin: 0 0 20px
+		&__name
+			max-width: none	
+
 @media only screen and (max-width: 768px)
 	.modal-title
 		font-size: 36px
@@ -264,6 +308,17 @@
 
 	.page-article h1
 		font-size: 40px
+
+	.sample-box
+		flex-wrap: wrap
+		.btn
+			margin: 10px 0 0
+			width: 100%
+		&__title
+			margin: 0 
+			padding: 0 0 0 20px
+			width: calc(100% - 30px)	
+			font-size: 20px	
 
 @media only screen and (max-width: 576px)
 	.modal-title
@@ -370,6 +425,25 @@
 	.text-description
 		font-size: 16px
 
+	.document-file-item
+		flex-wrap: wrap
+		.label-file
+			margin: 10px 0 0
+		&__name
+			padding: 0
+			br
+				display: none
+
+	.last-step
+		flex-wrap: wrap
+		h4
+			padding: 0
+			margin: 0 0 10px
+			width: 100%			
+
+	.sample-box__title
+		font-size: 15px			
+
 @media only screen and (max-width: 480px)
 	.modal-dialog .btn-group .btn
 		min-width: auto
@@ -401,6 +475,21 @@
 			li
 				width: 100%
 				margin: 0 0 10px
+
+	.sample-box
+		padding: 15px
+		&__icon
+			width: 20px
+		&__title
+			width: calc(100% - 20px)
+			padding: 0 0 0 10px
+			font-size: 14px
+
+	.nav-tabs
+		font-size: 20px		
+
+	.contract-item h3
+		font-size: 22px				
 
 @media only screen and (max-width: 420px)
 

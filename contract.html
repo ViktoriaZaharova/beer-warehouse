@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пивной склад</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<div class="nav-menu__close"></div>
+						<form method="post" class="form-search">
+							<label><input type="text" placeholder="поиск"></label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+						<div class="address-box">
+							<p><strong>Самовывоз</strong></p>
+							<p>Пенза, ул. Володарского, 2</p>
+						</div>
+					</nav>
+
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+					<a href="basket.html" class="btn-basket">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#basket"></use>
+						</svg>
+						<span class="btn-basket__val">3</span>
+					</a>
+
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="page page-contract page-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Заключить договор</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<h1>Заключить договор</h1>
+				</div>
+				<div class="col-12 col-lg-7 mb-30">
+					<div class="text-description">
+						<p>Мы работаем в сфере оптовой торговли напитками с 2000 года и за это время зарекомендовали себя как
+							надежный
+							поставщик.
+							Наша продукция всегда высокого качества и по приемлемым ценам. Широкий ассортимент предлагает покупателям
+							напитки на
+							любой вкус, кроме этого, каталог товаров постоянно расширяется. Мы ценим своих клиентов, поэтому
+							соотношение
+							Цена-Качество наших напитков всегда самое оптимальное. Мы работаем в сфере оптовой торговли напитками с
+							2000 года и
+							за
+							это время зарекомендовали себя как надежный поставщик. Наша продукция всегда высокого качества и по
+							приемлемым
+							ценам.
+							Широкий ассортимент предлагает покупателям напитки на любой вкус, кроме этого, каталог товаров постоянно
+							расширяется. Мы
+							ценим своих клиентов, поэтому соотношение Цена-Качество наших напитков всегда самое оптимальное.</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 mb-30">
+					<div class="manager-box">
+						<div class="manager-box__head">
+							<div class="manager-box__photo"><img src="img/manager.png" alt=""></div>
+							<div class="manager-box__name">
+								<div class="name">Ирина Бибокова</div>
+								<div class="manager-position">Ответсвенный менеджер по работе с клиентам</div>
+							</div>
+						</div>
+						<div class="manager-box__body">
+							<div class="box-text">
+								<p>У вас есть вопросы или возникли трудности с заполнением полей договора?</p>
+								<p>Свяжитесь с нами по телефону: 8 8412 564 7892</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<ul class="nav nav-pills nav-tabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="nav-tab-1" data-bs-toggle="pill" data-bs-target="#tab-1" type="button"
+								role="tab" aria-controls="tab-1" aria-selected="true">Юридическое лицо</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="nav-tab-2" data-bs-toggle="pill" data-bs-target="#tab-2" type="button"
+								role="tab" aria-controls="tab-2" aria-selected="false">ИП</button>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1" tabindex="0">
+
+							<div class="sample-box">
+								<div class="sample-box__icon"><img src="img/pdf.svg" alt=""></div>
+								<a href="#" class="sample-box__title" download="#" target="_blank">Шаблон_Договор_юр_лицо.doc</a>
+								<a href="#" class="btn btn-accent" download="#" target="_blank">скачать шаблон</a>
+							</div>
+
+							<form method="post" class="form-contract">
+								<div class="contract-item">
+									<h3>Данные для заполнения</h3>
+
+									<div class="row">
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Полное наименование организации" name="name_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Юридический адрес" name="yur_address_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Почтовый адрес" name="address_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ИНН" name="inn">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="КПП" name="kpp">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ОГРН" name="ogrn">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Банковские реквизиты" name="bank" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ФИО контактного лица для связи" name="name_user" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Телефон контактного лица" name="phone" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="e-mail" name="mail" required>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="contract-item">
+									<h3>Прикрепите документы</h3>
+	<div class="row">
+		<div class="col-12 col-lg-5">
+			<div class="document-file-item">
+				<div class="document-file-item__name">Свидетельство КПП</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item">
+				<div class="document-file-item__name">Свидетельство о гос.регистрации</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item">
+				<div class="document-file-item__name">Устав (1,2 и предпоследняя, последняя страницы)</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item">
+				<div class="document-file-item__name">Свидетельство о постановке на налоговой учет</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item">
+				<div class="document-file-item__name">Выписка из ЕГРЮЛ</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+		</div>
+		<div class="col-12 col-lg-7">
+			<div class="document-file-item w-100">
+				<div class="document-file-item__name">Свидетельство о внесении записи в Единый гос. Реестр юр.лиц о юр.лице,
+					зарегистрированном до 01.07.2002</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item w-100">
+				<div class="document-file-item__name">Решение учредителя/протокол собрания учредителей о создании организации
+				</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item w-100">
+				<div class="document-file-item__name">Приказ о назначении руководителя организации на должность</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+			<div class="document-file-item w-100">
+				<div class="document-file-item__name">Копия удостоверения личности (паспорт) с указанием личности, места
+					жительства</div>
+				<label class="label-file">
+					<input type="file" name="file">
+					<span class="label-file__text">прикрепить</span>
+				</label>
+			</div>
+	
+		</div>
+	</div>
+									
+									
+								</div>
+
+								<a href="#" class="btn btn-accent btn-agreement">Сформировать договор</a>
+
+								<div class="last-step">
+									<h4>После того, как вы сформировали договор, подпишите его и прикрепите подписанный скан всех страниц</h4>
+									<label class="label-file">
+										<input type="file" name="file">
+										<span class="label-file__text">прикрепить скан</span>
+									</label>
+								</div>
+
+								<div class="final-callback">
+									<p>Когда договор пройдет нашу проверку, мы свяжемся с вами по указанному телефону и электронной почте, чтобы уточнить
+									детали заключения договора.</p>
+								</div>
+							</form>
+						</div>
+
+						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2" tabindex="0">
+							<div class="sample-box">
+								<div class="sample-box__icon"><img src="img/pdf.svg" alt=""></div>
+								<a href="#" class="sample-box__title" download="#" target="_blank">Шаблон_Договор_юр_лицо.doc</a>
+								<a href="#" class="btn btn-accent" download="#" target="_blank">скачать шаблон</a>
+							</div>
+							
+							<form method="post" class="form-contract">
+								<div class="contract-item">
+									<h3>Данные для заполнения</h3>
+							
+									<div class="row">
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Полное наименование организации" name="name_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Юридический адрес" name="yur_address_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Почтовый адрес" name="address_company">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ИНН" name="inn">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="КПП" name="kpp">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ОГРН" name="ogrn">
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Банковские реквизиты" name="bank" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="ФИО контактного лица для связи" name="name_user" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="Телефон контактного лица" name="phone" required>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-20">
+											<label>
+												<input type="text" placeholder="e-mail" name="mail" required>
+											</label>
+										</div>
+									</div>
+								</div>
+							
+								<div class="contract-item">
+									<h3>Прикрепите документы</h3>
+							<div class="row">
+								<div class="col-12 col-lg-5">
+									<div class="document-file-item">
+										<div class="document-file-item__name">Свидетельство о гос.регистрации</div>
+										<label class="label-file">
+											<input type="file" name="file">
+											<span class="label-file__text">прикрепить</span>
+										</label>
+									</div>
+									<div class="document-file-item">
+										<div class="document-file-item__name">Свидетельство о постановке на налоговой учет</div>
+										<label class="label-file">
+											<input type="file" name="file">
+											<span class="label-file__text">прикрепить</span>
+										</label>
+									</div>
+									<div class="document-file-item">
+										<div class="document-file-item__name">Копия паспорта</div>
+										<label class="label-file">
+											<input type="file" name="file">
+											<span class="label-file__text">прикрепить</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-12 col-lg-7">
+									<div class="document-file-item w-100">
+										<div class="document-file-item__name">Копия удостоверения личности (паспорт) с указанием личности, места
+											жительства</div>
+										<label class="label-file">
+											<input type="file" name="file">
+											<span class="label-file__text">прикрепить</span>
+										</label>
+									</div>
+									<div class="document-file-item w-100">
+										<div class="document-file-item__name">Карточка клиента <br>(если есть)</div>
+										<label class="label-file">
+											<input type="file" name="file">
+											<span class="label-file__text">прикрепить</span>
+										</label>
+									</div>
+								</div>
+							</div>
+								</div>
+							
+								<a href="#" class="btn btn-accent btn-agreement">Сформировать договор</a>
+							
+								<div class="last-step">
+									<h4>После того, как вы сформировали договор, подпишите его и прикрепите подписанный скан всех страниц</h4>
+									<label class="label-file">
+										<input type="file" name="file">
+										<span class="label-file__text">прикрепить скан</span>
+									</label>
+								</div>
+							
+								<div class="final-callback">
+									<p>Когда договор пройдет нашу проверку, мы свяжемся с вами по указанному телефону и электронной почте, чтобы
+										уточнить
+										детали заключения договора.</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="callback">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="callback-wrapper">
+						<h2>У вас есть предложения по улучшению нашей работы?
+							Оставляйте свой комментарий
+						</h2>
+
+						<form method="post" class="form-callback">
+							<label><input type="text" placeholder="Имя" name="name"></label>
+							<label><input type="text" placeholder="Телефон" name="phone" required></label>
+							<label><textarea name="message" placeholder="Текст"></textarea></label>
+							<button type="submit" class="btn btn-accent">отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="ageModal" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Содержимое сайта может содержать материалы, предназначенные только для взрослых
+					</div>
+					<div class="modal-title">Вам есть 18 лет?</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="btn-group">
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Да, мне есть 18</a>
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Мне нет 18</a>
+						<div class="viewed-text">
+							<p>Но я хочу посмотреть ассортимент
+								безалкогольных напитков</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="agreementModal" tabindex="-1" aria-labelledby="agreementModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Договор формируется</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Мы свяжемся с вами по указанному телефону или электронной почты, уточнить детали заключения договора</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Данные о вашем заказе поступили в обработку
+					</div>
+					<div class="modal-title">Спасибо за заказ!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Наш менеджер свяжется с вами в ближайшее время</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

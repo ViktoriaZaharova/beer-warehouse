@@ -98,6 +98,51 @@
   .product-card .price-wrapper, .available-box {
     font-size: 16px;
   }
+  .contract-item {
+    margin: 0 0 30px;
+  }
+  .contract-item h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  .sample-box {
+    margin: 0 0 30px;
+    padding: 20px;
+  }
+  .sample-box__title {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+  .sample-box__icon {
+    width: 30px;
+  }
+  .tab-content {
+    margin: 30px 0 0;
+  }
+  .nav-tabs {
+    font-size: 24px;
+  }
+  .nav-tabs .nav-item {
+    margin: 0 20px 0 0;
+  }
+  .nav-tabs .nav-item:last-child {
+    margin: 0;
+  }
+  .document-file-item.w-100 {
+    padding: 0;
+  }
+  .last-step {
+    padding: 20px;
+    margin: 30px auto 0;
+  }
+  .last-step h4 {
+    font-size: 20px;
+    padding: 0 20px 0 0;
+  }
+  .final-callback {
+    font-size: 20px;
+    margin: 30px auto 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   header {
@@ -226,6 +271,15 @@
   .page-article h1 {
     font-size: 44px;
   }
+  .document-file-item {
+    margin: 0 0 20px;
+  }
+  .document-file-item:last-child {
+    margin: 0 0 20px;
+  }
+  .document-file-item__name {
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .modal-title {
@@ -293,6 +347,20 @@
   }
   .page-article h1 {
     font-size: 40px;
+  }
+  .sample-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sample-box .btn {
+    margin: 10px 0 0;
+    width: 100%;
+  }
+  .sample-box__title {
+    margin: 0;
+    padding: 0 0 0 20px;
+    width: calc(100% - 30px);
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -399,6 +467,31 @@
   .text-description {
     font-size: 16px;
   }
+  .document-file-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .document-file-item .label-file {
+    margin: 10px 0 0;
+  }
+  .document-file-item__name {
+    padding: 0;
+  }
+  .document-file-item__name br {
+    display: none;
+  }
+  .last-step {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .last-step h4 {
+    padding: 0;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .sample-box__title {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .modal-dialog .btn-group .btn {
@@ -432,5 +525,22 @@
   footer .menu li {
     width: 100%;
     margin: 0 0 10px;
+  }
+  .sample-box {
+    padding: 15px;
+  }
+  .sample-box__icon {
+    width: 20px;
+  }
+  .sample-box__title {
+    width: calc(100% - 20px);
+    padding: 0 0 0 10px;
+    font-size: 14px;
+  }
+  .nav-tabs {
+    font-size: 20px;
+  }
+  .contract-item h3 {
+    font-size: 22px;
   }
 }
