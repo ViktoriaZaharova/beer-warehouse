@@ -1,0 +1,357 @@
+@import 'vars'
+
+.home
+	position: relative
+	.subtitle
+		max-width: 394px
+		color: $accent
+		margin: 0 0 46px
+	.date
+		margin: 24px 0 59px
+		font-size: 32px
+		font-weight: 500
+		color: $accent
+
+	.container
+		position: relative
+
+.home-slider-item
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 207px 0 130px
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%)
+	.container
+		position: relative
+		z-index: 1
+
+.home-slider
+	position: relative
+	z-index: 1
+
+.home-slider-bg
+	width: 100%
+	height: 100%
+	z-index: -1
+	position: absolute
+	top: 0
+	left: 0
+	object-fit: cover
+
+.home-slider__nav
+	position: absolute
+	width: fit-content
+	justify-content: flex-end
+	z-index: 1
+	margin: -180px 0 0 calc(100% - 100px)
+
+// category-section
+.category-section
+	margin: 80px 0 0
+
+.category-card
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 1
+	border-radius: 16px
+	overflow: hidden
+	padding: 50px 48px
+	display: flex
+	justify-content: flex-end
+	flex-direction: column
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%)
+		z-index: -1
+	&__bg
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: -2
+		position: absolute
+		left: 0
+		top: 0
+	.age
+		margin: 0 auto 0 0
+		width: 51px
+	&__title
+		margin: 70px 0 43px
+		font-size: 36px
+		font-weight: 500
+		color: #fff
+		text-transform: uppercase
+		max-width: 386px
+		&:hover
+			color: $accent
+
+.img-reverse
+	transform: scale(-1,1)
+
+// about
+.about-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+
+.about-image
+	width: calc(100% - 391px)
+	border-radius: 16px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 16px
+
+.about-content
+	max-width: 612px
+	width: 100%
+	margin: 0 0 0 -220px
+	padding: 76px 68px 104px 85px
+	border-radius: 16px
+	background: #FFC400
+	color: #000
+	h2
+		margin: 0 0 27px
+		color: #000
+	.box-text
+		font-size: 18px
+
+// news
+.news
+	margin: 109px 0 94px
+	overflow: hidden
+	h2
+		margin: 0 30px 0 0
+
+.news-slider
+	width: calc(100% + 600px)
+	.slide
+		padding: 0 10px
+	.slick-list
+		margin: 0 -10px
+	&__nav
+		margin: 0 0 0 auto
+
+.news-card
+	display: flex
+	align-items: stretch
+	max-width: 580px
+	width: 100%
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	font-size: 18px
+	&__img
+		border-radius: 16px
+		@include d-flex
+		max-width: 268px
+		width: 100%
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 16px
+	&__body
+		width: calc(100% - 268px)
+		padding: 27px 25px 15px 30px
+		display: flex
+		flex-direction: column
+	.date
+		margin: 0 0 18px
+		color: $accent
+	&__title
+		color: #fff
+		font-weight: 500
+		max-height: 96px
+		overflow: hidden
+		margin: 0 0 10px
+		&:hover
+			color: $accent
+	.btn
+		font-size: 16px
+		margin: auto 0 0
+
+// callback
+.callback-wrapper
+	width: 100%
+	display: flex
+	align-items: start
+	flex-wrap: wrap
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	padding: 60px 84px 48px
+	h2
+		width: calc(100% - 356px)
+		padding: 0 58px 0 0
+
+.form-callback
+	max-width: 356px
+	width: 100%
+
+// contacts
+.contacts
+	margin: 100px 0
+	h2, h1
+		margin: 0 0 40px
+		color: $accent
+	.phone
+		margin: 11px 0 30px
+		font-size: 36px
+		font-weight: 500
+		color: $accent
+		&:hover
+			color: #fff
+
+.adress
+	font-size: 36px
+	font-weight: 500
+
+.mail
+	margin: 30px 0
+	font-size: 24px
+	color: #fff
+	&:hover
+		color: $accent
+
+.schedule
+	font-size: 24px
+	span
+		font-size: 18px
+
+.map-photo
+	width: 100%
+	height: 100%
+	border-radius: 16px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 16px
+
+.map
+	border-radius: 16px
+	width: 100%
+	height: 100%
+	iframe
+		width: 100%
+		height: 100%
+		border-radius: 16px
+
+.page-contacts
+	margin: 0
+	.map-photo, .map
+		height: 100%
+	.mail
+<<<<<<< HEAD
+		margin: 80px 0 30px
+
+// page-news
+.page-news
+	margin: 0
+
+=======
+		margin: 80px 0 30px	
+
+// page-news
+>>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
+.news-card-column
+	max-width: none
+	flex-direction: column
+	height: 100%
+	width: 100%
+	.news-card__img
+		width: 100%
+		max-width: none
+		height: 248px
+	.news-card__body
+		width: 100%
+		height: calc(100% - 248px)
+		padding: 20px 30px 30px
+	.news-card__title
+		margin: 0 0 34px
+<<<<<<< HEAD
+
+// news sales
+.news-sales-slider-item
+	width: 100%
+	position: relative
+	z-index: 1
+	padding: 56px 58px 117px
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: -2
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.00) 50%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%)
+		z-index: -1
+
+.text-slider
+	margin: 16px 0 0
+	max-width: 863px
+	font-size: 36px
+	font-weight: 500
+
+.news-sales-slider__nav
+	margin: -90px 0 40px
+	padding: 0 58px
+
+// brands
+.brands-section
+	margin: 76px 0 93px
+
+.brand-card
+	width: 100%
+	height: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	align-items: center
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	color: #fff
+	padding: 33px 20px 36px
+	&__logo
+		@include d-flex
+		height: 279px
+		img
+			max-height: 100%
+	&__name
+		width: 100%
+		margin: 16px auto 20px
+		font-size: 18px
+		color: #fff
+		&:hover
+			color: $accent
+	.btn
+		margin: 0 auto
+		padding: 10px 42px
+=======
+					
+>>>>>>> 4473fe31eb400b1e93eb186a032f6a15c453ebf9
