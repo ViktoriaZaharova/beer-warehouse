@@ -366,6 +366,12 @@ a.color-accent:hover {
   color: #FFC400;
 }
 
+.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
 .subtitle {
   font-size: 32px;
   font-weight: 500;

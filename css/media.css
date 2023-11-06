@@ -17,6 +17,15 @@
   .news-slider {
     width: calc(100% + 20px);
   }
+  .package-order {
+    padding: 0 0 0 20px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+  .product-information {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header .nav-menu {
@@ -142,6 +151,12 @@
   .final-callback {
     font-size: 20px;
     margin: 30px auto 0;
+  }
+  .product-information .tooltip-wrapper {
+    margin: 0 0 0 10px;
+  }
+  .product-information .amount {
+    margin: 0 20px 0 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -280,6 +295,12 @@
   .document-file-item__name {
     max-width: none;
   }
+  .page-product h1 {
+    width: 100%;
+  }
+  .page-product .article {
+    margin: 0 0 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .modal-title {
@@ -361,6 +382,24 @@
     padding: 0 0 0 20px;
     width: calc(100% - 30px);
     font-size: 20px;
+  }
+  .product-information .list-characteristics {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .product-information .price-wrapper {
+    width: 100%;
+  }
+  .remainder {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #FFC400;
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+  }
+  .package-order {
+    width: 100%;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -461,7 +500,7 @@
     height: calc(100% - 300px);
   }
   .page-article h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin: 0 0 20px;
   }
   .text-description {
@@ -491,6 +530,35 @@
   }
   .sample-box__title {
     font-size: 15px;
+  }
+  .product-information .price-item {
+    padding: 0;
+    width: 100%;
+    border: none;
+    margin: 0 0 20px;
+  }
+  .product-information .price-item:last-child {
+    margin: 0;
+  }
+  .product-information .amount {
+    margin: 0;
+  }
+  .package-value {
+    margin: 20px 0 0;
+  }
+  .btn-add-basket {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .recommended {
+    margin: 40px 0 0;
+  }
+  .list-characteristics .h4 {
+    min-width: 120px;
+  }
+  .product-image {
+    height: 400px;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -542,5 +610,11 @@
   }
   .contract-item h3 {
     font-size: 22px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+  .product-information {
+    font-size: 16px;
   }
 }
