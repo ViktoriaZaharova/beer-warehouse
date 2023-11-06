@@ -1156,3 +1156,231 @@
   width: calc(100% - 250px);
   margin: 0 0 19px;
 }
+
+.page-basket h1 {
+  margin: 0;
+}
+.page-basket .contract-item h3 {
+  margin: 0 0 30px;
+}
+.page-basket .document-file-item {
+  margin: 0 0 45px;
+}
+.page-basket .document-file-item__name {
+  max-width: 420px;
+}
+.page-basket .form-contract {
+  margin: 10px 0 60px;
+}
+
+.clients-type-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 58px;
+  padding: 33px 40px;
+  border-radius: 16px;
+  background: #262626;
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+}
+.clients-type-box h3 {
+  font-weight: 500;
+  font-size: 36px;
+  max-width: 742px;
+  width: calc(100% - 370px);
+  padding: 0 10px 0 0;
+}
+.clients-type-box .text-description {
+  width: 100%;
+  color: #FFC400;
+  margin: 0 0 25px;
+}
+.clients-type-box__content {
+  max-width: 370px;
+}
+
+.clients-type-box-yur h3 {
+  width: calc(100% - 330px);
+  padding: 0 20px 0 0;
+}
+.clients-type-box-yur .clients-type-box__content {
+  max-width: 330px;
+}
+
+.list-radio li {
+  margin: 0 0 20px;
+}
+.list-radio li:last-child {
+  margin: 0;
+}
+
+.basket-products {
+  width: 100%;
+  max-height: 900px;
+  padding: 0 30px 0 0;
+}
+
+.basket-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0 16px;
+  margin: 0 0 40px;
+  border-bottom: 2px solid #424242;
+}
+.basket-card:last-child {
+  margin: 0;
+}
+.basket-card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  width: 104px;
+  height: 122px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.basket-card__img img {
+  max-height: 100%;
+}
+.basket-card__body {
+  width: calc(100% - 104px);
+  padding: 0 0 0 23px;
+}
+.basket-card__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.basket-card__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  width: calc(100% - 160px);
+  padding: 0 24px 0 0;
+}
+.basket-card__title:hover {
+  color: #FFC400;
+}
+.basket-card__price {
+  font-size: 36px;
+  font-weight: 500;
+  max-width: 160px;
+  width: 100%;
+  text-align: center;
+}
+.basket-card__footer {
+  margin: 15px 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.basket-card .amount {
+  max-width: 110px;
+}
+.basket-card .amount span {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.quantity-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.quantity-box h4 {
+  margin: 0 20px 0 0;
+  max-width: 110px;
+}
+
+.quantity-box-stock {
+  color: #FFC400;
+  max-width: 165px;
+}
+
+.form-basket {
+  max-width: 1358px;
+  width: 100%;
+}
+.form-basket__total {
+  padding: 0 0 0 50px;
+  max-width: 515px;
+}
+
+.form-basket-item {
+  margin: 0 0 50px;
+}
+.form-basket-item:last-child {
+  margin: 0;
+}
+.form-basket-item .h3 {
+  margin: 0 0 25px;
+}
+
+.delivery-basket .h3 {
+  margin: 0 0 65px;
+}
+
+.sum-value {
+  margin: 0 0 27px;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.datepicker {
+  background: url("../img//calendar.svg") no-repeat calc(100% - 25px) center;
+  background-size: 26px;
+  padding-right: 45px;
+}
+
+.list-radio-delivery {
+  font-size: 18px;
+}
+.list-radio-delivery li {
+  padding: 0 0 0 58px;
+  margin: 0 0 50px;
+  position: relative;
+}
+.list-radio-delivery li:last-child {
+  margin: 0;
+}
+.list-radio-delivery .label-radio__custom {
+  margin: 0 23px 0 -58px;
+}

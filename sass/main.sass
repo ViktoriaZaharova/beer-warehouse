@@ -710,7 +710,7 @@
 			width: 100%
 			margin: 0 0 10px
 	.amount
-		margin: 0 auto 0 0	
+		margin: 0 auto 0 0
 
 .remainder
 	width: 35%
@@ -724,7 +724,7 @@
 	align-items: flex-start
 	&__number
 		margin: 0 19px 0 0
-		color: $accent	
+		color: $accent
 
 .package-order
 	width: 65%
@@ -780,3 +780,165 @@
 		font-size: 36px
 		width: calc(100% - 250px)
 		margin: 0 0 19px
+
+// basket page
+.page-basket
+	h1
+		margin: 0
+	.contract-item
+		h3
+			margin: 0 0 30px
+	.document-file-item
+		margin: 0 0 45px
+		&__name
+			max-width: 420px
+
+	.form-contract
+		margin: 10px 0 60px		
+
+.clients-type-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	width: 100%
+	margin: 0 0 58px
+	padding: 33px 40px
+	border-radius: 16px
+	background: #262626
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
+	h3
+		font-weight: 500
+		font-size: 36px
+		max-width: 742px
+		width: calc(100% - 370px)
+		padding: 0 10px 0 0
+	.text-description
+		width: 100%
+		color: $accent
+		margin: 0 0 25px
+	&__content
+		max-width: 370px
+
+.clients-type-box-yur
+	h3
+		width: calc(100% - 330px)
+		padding: 0 20px 0 0
+	.clients-type-box
+		&__content
+			max-width: 330px
+
+.list-radio
+	li
+		margin: 0 0 20px
+		&:last-child
+			margin: 0
+
+.basket-products
+	width: 100%
+	max-height: 900px
+	padding: 0 30px 0 0
+
+.basket-card
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	padding: 0 0 16px
+	margin: 0 0 40px
+	border-bottom: 2px solid #424242
+	&:last-child
+		margin: 0
+	&__img
+		@include d-flex
+		background: #fff
+		width: 104px
+		height: 122px
+		border-radius: 8px
+		padding: 8px
+		img
+			max-height: 100%
+	&__body
+		width: calc(100% - 104px)
+		padding: 0 0 0 23px
+	&__head
+		width: 100%
+		display: flex
+		align-items: start
+		flex-wrap: wrap
+	&__title
+		font-size: 20px
+		font-weight: 500
+		color: #fff
+		width: calc(100% - 160px)
+		padding: 0 24px 0 0
+		&:hover
+			color: $accent
+	&__price
+		font-size: 36px
+		font-weight: 500
+		max-width: 160px
+		width: 100%
+		text-align: center
+	&__footer
+		margin: 15px 0 0
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	.amount
+		max-width: 110px
+		span
+			width: 30px
+			height: 30px
+			min-width: 30px
+
+.quantity-box
+	display: flex
+	align-items: center
+	margin: 0 auto
+	h4
+		margin: 0 20px 0 0
+		max-width: 110px
+
+.quantity-box-stock
+	color: $accent
+	max-width: 165px
+
+.form-basket
+	max-width: 1358px
+	width: 100%
+	&__total
+		padding: 0 0 0 50px
+		max-width: 515px
+
+.form-basket-item
+	margin: 0 0 50px
+	&:last-child
+		margin: 0
+	.h3
+		margin: 0 0 25px
+
+.delivery-basket
+	.h3
+		margin: 0 0 65px
+
+.sum-value
+	margin: 0 0 27px
+	font-weight: 500
+	font-size: 48px
+
+.datepicker
+	background: url('../img//calendar.svg') no-repeat calc(100% - 25px) center
+	background-size: 26px
+	padding-right: 45px
+
+.list-radio-delivery
+	font-size: 18px
+	li
+		padding: 0 0 0 58px
+		margin: 0 0 50px
+		position: relative
+		&:last-child
+			margin: 0
+	.label-radio__custom
+		margin: 0 23px 0 -58px

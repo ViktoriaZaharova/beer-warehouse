@@ -26,6 +26,40 @@
   .product-information {
     padding: 20px;
   }
+  .form-basket__total {
+    padding: 0;
+    max-width: none;
+    margin: 30px 0 0;
+  }
+  .clients-type-box {
+    margin: 0 0 30px;
+    padding: 30px;
+  }
+  .link-print {
+    margin: 0 0 30px;
+  }
+  .form-basket-item {
+    margin: 0 0 30px;
+  }
+  .form-basket-item:last-child {
+    margin: 0;
+  }
+  .form-basket-item .h3 {
+    margin: 0 0 20px;
+  }
+  .list-radio-delivery li {
+    margin: 0 0 30px;
+  }
+  .list-radio-delivery li:last-child {
+    margin: 0;
+  }
+  .delivery-basket .h3 {
+    margin: 0 0 30px;
+  }
+  .sum-value {
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header .nav-menu {
@@ -157,6 +191,11 @@
   }
   .product-information .amount {
     margin: 0 20px 0 0;
+  }
+  .clients-type-box h3 {
+    font-size: 30px;
+    max-width: 520px;
+    margin: 0 auto 0 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -301,6 +340,13 @@
   .page-product .article {
     margin: 0 0 10px;
   }
+  .clients-type-box h3 {
+    width: 100%;
+    max-width: none;
+    font-size: 24px;
+    margin: 0 0 20px;
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .modal-title {
@@ -400,6 +446,37 @@
   .package-order {
     width: 100%;
     padding: 0;
+  }
+  .basket-card__img {
+    margin: 0 auto 20px;
+  }
+  .basket-card__body {
+    width: 100%;
+    padding: 0;
+  }
+  .basket-card__price {
+    font-size: 30px;
+  }
+  .quantity-box-stock {
+    max-width: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .quantity-box {
+    margin: 0 auto 0 0;
+  }
+  .clients-type-box .btn {
+    margin: 10px 0 0;
+  }
+  .page-basket .form-contract {
+    margin: 0 0 20px;
+  }
+  .page-basket .document-file-item {
+    margin: 0 0 20px;
+  }
+  .mb-35 {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -560,6 +637,33 @@
     height: 400px;
     padding: 20px;
   }
+  .basket-card__price {
+    font-size: 24px;
+    min-width: auto;
+    width: 100%;
+    margin: 10px auto 0;
+  }
+  .basket-card__title {
+    width: 100%;
+    padding: 0;
+  }
+  .label-radio__custom {
+    margin: 0 10px 0 0;
+  }
+  .label-radio__title {
+    margin: 0 0 10px;
+  }
+  .label-radio__custom {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+  .clients-type-box .text-description {
+    margin: 0 0 15px;
+  }
+  .page-basket .document-file-item__name {
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   .modal-dialog .btn-group .btn {
@@ -616,5 +720,12 @@
   }
   .product-information {
     font-size: 16px;
+  }
+  .btn-delete {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .clients-type-box {
+    padding: 20px;
   }
 }

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пивной склад</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<div class="nav-menu__close"></div>
+						<form method="post" class="form-search">
+							<label><input type="text" placeholder="поиск"></label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+						<div class="address-box">
+							<p><strong>Самовывоз</strong></p>
+							<p>Пенза, ул. Володарского, 2</p>
+						</div>
+					</nav>
+
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+					<a href="basket.html" class="btn-basket">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#basket"></use>
+						</svg>
+						<span class="btn-basket__val">3</span>
+					</a>
+
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="page page-basket page-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Корзина</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<h1>Корзина</h1>
+				</div>
+				<div class="col-12 col-xxl-9">
+
+					<div class="clients-type-box clients-type-box-yur">
+						<div class="text-description">
+							<p>Чтобы сотрудничать с юридическим лицом или ИП, нам необходимо заключить договор.</p>
+						</div>
+						<div class="sample-box__icon"><img src="img/pdf.svg" alt=""></div>
+						<a href="#" class="sample-box__title" download="#" target="_blank">Шаблон_Договор_юр_лицо.doc</a>
+						<a href="#" class="btn btn-accent" download="#" target="_blank">скачать шаблон</a>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<form method="post" class="form-contract">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-4">
+								<div class="contract-item">
+									<h3>Данные для заполнения</h3>
+
+									<div class="row">
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="Полное наименование организации" name="name_company">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="Юридический адрес" name="yur_address_company">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="Почтовый адрес" name="address_company">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="ИНН" name="inn">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="КПП" name="kpp">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="ОГРН" name="ogrn">
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="Банковские реквизиты" name="bank" required>
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="ФИО контактного лица для связи" name="name_user" required>
+											</label>
+										</div>
+										<div class="col-12 mb-35">
+											<label>
+												<input type="text" placeholder="e-mail" name="mail" required>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-xl-6 offset-xl-1">
+								<div class="contract-item">
+									<h3>Прикрепите документы</h3>
+									<div class="row">
+										<div class="col-12">
+											<div class="document-file-item">
+												<div class="document-file-item__name">Свидетельство КПП</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Свидетельство о гос.регистрации</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Устав (1,2 и предпоследняя, последняя страницы)</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Свидетельство о постановке на налоговой учет</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Свидетельство о внесении записи в Единый гос. Реестр
+													юр.лиц о юр.лице, зарегистрированном до 01.07.2002</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="document-file-item">
+												<div class="document-file-item__name">Решение учредителя/протокол собрания учредителей о
+													создании организации</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Приказ о назначении руководителя организации на должность
+												</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+											<div class="document-file-item">
+												<div class="document-file-item__name">Копия паспорта директора с указанием личности, места
+													жительства
+												</div>
+												<label class="label-file">
+													<input type="file" name="file">
+													<span class="label-file__text">прикрепить</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="col-12">
+					<a href="#" class="link-print"><span>Версия для печати</span><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#print"></use>
+						</svg></a>
+
+					<form method="post" class="form-basket">
+						<div class="row">
+							<div class="col-12 col-xxl-7">
+								<div class="basket-products scroll-vertical">
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-card">
+										<a href="product.html" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+										<div class="basket-card__body">
+											<div class="basket-card__head">
+												<a href="product.html" class="basket-card__title">Пиво «Жигули Барное Безалкогольное»
+													0,45 ст/б 1/20</a>
+												<div class="basket-card__price">1099 ₽</div>
+											</div>
+											<div class="basket-card__footer">
+												<div class="quantity-box-stock">
+													<p>Остаток на складе: 150 упаковок</p>
+												</div>
+												<div class="quantity-box">
+													<h4>Количество упаковок:</h4>
+
+													<div class="amount">
+														<span class="down"><img src="img/minus.svg" alt=""></span>
+														<input type="text" value="1" />
+														<span class="up"><img src="img/plus.svg" alt=""></span>
+													</div>
+												</div>
+
+												<a href="#" class="btn btn-border-accent btn-delete"><span>удалить</span><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#delete"></use>
+													</svg></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-xxl-5">
+								<div class="form-basket__total">
+									<div class="form-basket-item delivery-basket">
+										<div class="h3">Способ доставки</div>
+
+										<ul class="list-radio list-radio-delivery my-ul">
+											<li>
+												<label class="label-radio">
+													<input type="radio" name="radio2" checked>
+													<span class="label-radio__custom"></span>
+													<span class="label-radio__text"><span class="label-radio__title">Самовывоз</span>
+													</span>
+												</label>
+												<div class="address-radio">по адресу Пензенская обл., <br>
+													г. Пенза, ул. Рябова, д. 31 литера В офис 25</div>
+											</li>
+											<li>
+												<label class="label-radio">
+													<input type="radio" name="radio2">
+													<span class="label-radio__custom"></span>
+													<span class="label-radio__text"><span class="label-radio__title">Доставка</span></span>
+												</label>
+												<label>
+													<input type="text" placeholder="Введите адрес доставки" name="addres">
+												</label>
+												<label>
+													<input type="text" placeholder="Выберите дату доставки" name="date" class="datepicker">
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="form-basket-item">
+										<div class="h3">Общая стоимость</div>
+										<div class="sum-value">3297 ₽</div>
+
+										<button class="btn btn-accent" type="submit">оформить заказ</button>
+
+										<div class="consent">Оформляя заказ на нашем сайте, вы подтверждаете, что вы ознакомлены с условиями
+											и согласны с ними.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="contract.html">Заключить договор</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<form method="post" class="form-search">
+						<label><input type="text" placeholder="поиск"></label>
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+
+					<div class="address-box">
+						<p><strong>Самовывоз</strong></p>
+						<p>Пенза, ул. Володарского, 2</p>
+					</div>
+
+					<a href="tel:+784125647892" class="phone">8 8412 564 7892</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="ageModal" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Содержимое сайта может содержать материалы, предназначенные только для взрослых
+					</div>
+					<div class="modal-title">Вам есть 18 лет?</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="btn-group">
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Да, мне есть 18</a>
+						<a href="#" class="btn btn-border" data-bs-dismiss="modal" aria-label="Закрыть">Мне нет 18</a>
+						<div class="viewed-text">
+							<p>Но я хочу посмотреть ассортимент
+								безалкогольных напитков</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="agreementModal" tabindex="-1" aria-labelledby="agreementModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Договор формируется</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Мы свяжемся с вами по указанному телефону или электронной почты, уточнить детали заключения договора</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-subtitle">Данные о вашем заказе поступили в обработку
+					</div>
+					<div class="modal-title">Спасибо за заказ!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Наш менеджер свяжется с вами в ближайшее время</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

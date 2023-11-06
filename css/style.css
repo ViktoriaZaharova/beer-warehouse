@@ -199,9 +199,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   border: 1px solid #FFC400;
   color: #fff;
 }
+.btn-border-accent svg {
+  fill: #FFC400;
+}
 .btn-border-accent:hover, .btn-border-accent:focus {
   background: #FFC400;
   color: #000;
+}
+.btn-border-accent:hover svg, .btn-border-accent:focus svg {
+  fill: #000;
 }
 
 .btn-accent {
@@ -244,6 +250,13 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn-delete svg {
+  width: 18px;
+  height: 21px;
+  min-width: 18px;
+  margin: 0 0 0 15px;
 }
 
 .btn-group {
@@ -320,6 +333,10 @@ ul, ol {
   margin-bottom: 40px;
 }
 
+.mb-35 {
+  margin-bottom: 35px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -364,6 +381,7 @@ a.color-accent:hover {
   width: 100%;
   font-weight: 500;
   color: #FFC400;
+  margin: 0;
 }
 
 .h4 {
@@ -507,6 +525,75 @@ a.color-accent:hover {
 .inp-check:checked ~ .checkbox-custom {
   background: #fff url("../img/check-black.svg") no-repeat center;
   background-size: 8px;
+}
+
+.label-radio {
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.label-radio input {
+  display: none;
+}
+.label-radio input:checked + .label-radio__custom::before {
+  opacity: 1;
+}
+.label-radio__custom {
+  position: relative;
+  margin: 0 23px 0 0;
+  border-radius: 50%;
+  border: 2px solid #FFC400;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+}
+.label-radio__custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #fff;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.label-radio__title {
+  font-weight: 500;
+  margin: 0 0 18px;
+  display: block;
+}
+
+.link-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 50px;
+}
+.link-print svg {
+  width: 26px;
+  height: 25px;
+  margin: 0 0 0 20px;
+  fill: #FFC400;
+}
+.link-print:hover {
+  color: #FFC400;
 }
 
 .form-search {
@@ -751,4 +838,47 @@ a.color-accent:hover {
   height: 20px;
   background: url("../img/file.svg") no-repeat center;
   background-size: 100%;
+}
+
+.consent {
+  font-size: 12px;
+  max-width: 347px;
+  width: 100%;
+  margin: 38px 0 0;
+}
+
+.scroll-vertical {
+  overflow-y: auto;
+}
+.scroll-vertical::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+.scroll-vertical::-webkit-scrollbar-track {
+  background-color: #FFC400;
+}
+.scroll-vertical::-webkit-scrollbar-track-piece {
+  background-color: #212121;
+}
+.scroll-vertical::-webkit-scrollbar-thumb {
+  background-color: #FFC400;
+}
+.scroll-vertical::-webkit-scrollbar-corner {
+  background-color: #212121;
+}
+.scroll-vertical::-webkit-resizer {
+  background-color: #FFC400;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: #000;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #FFC400;
+  color: #000;
 }
